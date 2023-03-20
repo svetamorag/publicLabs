@@ -1,4 +1,4 @@
-echo "Running a script"
+echo "Welcome to Lab 2 - Platform Engineering - Cloud Ops Interaction"
 export PROJECT_ID=$(gcloud config get project)
 gcloud logging write --payload-type=json lab_log '{ "message": "The lab was created with one VM and other default settings", "custom_message": "Hi there!","personal_type":"app_log"}' --severity=INFO                                 
 gcloud logging write --payload-type=json lab_log '{ "message": "All messages from this lab will be placed in the same log", "custom_message": "This is the custom log entry for the lab","personal_type":"app_log"}' --severity=NOTICE                                 
